@@ -1,23 +1,11 @@
-import { useState, useEffect } from 'react';
-import axios from 'axios';
+import Dashboard from './components/Dashboard';
 
-function App() {
-  const [message, setMessage] = useState<string>('');
-
-  useEffect(() => {
-    axios.get('http://localhost:5000/api/hello')
-      .then(response => setMessage(response.data.message))
-      .catch(error => console.error('Error:', error));
-  }, []);
-
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">
-        NBA Fantasy Projector
-      </h1>
-      <p>{message}</p>
+    <div className="App dark bg-customBlackBg">
+      <Dashboard />
     </div>
   );
-}
+};
 
 export default App;

@@ -30,3 +30,5 @@ lerna-debug.log*
 
 venv
 node_modules
+/backend/.env
+/frontend/.env

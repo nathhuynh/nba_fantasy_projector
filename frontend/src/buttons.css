@@ -1,0 +1,40 @@
+.fancy-button {
+    background-color: #3576E0 !important;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.fancy-button:hover {
+    background-color: hsl(210, 100%, 60%);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fancy-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px hsl(210, 100%, 80%);
+}
+
+.fancy-button:active {
+    transform: translateY(1px);
+}
+
+.fancy-button:disabled {
+    background-color: hsl(210, 10%, 70%);
+    cursor: not-allowed;
+}
+
+.ghost-button {
+    background-color: transparent !important;
+    color: hsl(210, 100%, 50%);
+    border: 1px solid hsl(210, 100%, 50%);
+}
+
+.ghost-button:hover {
+    background-color: hsl(210, 100%, 95%) !important;
+}
